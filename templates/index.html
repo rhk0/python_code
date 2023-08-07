@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block title %}home{% endblock title %}
+{% block body %}
+<div class = "container-fluid my-4 px-0">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            {% load static %} <img src="{% static "img/1.jpg" %}" style="width :1200; height :200" />
+
+            {% comment %} <img src="/static/1.jpg" class="d-block w-100" alt=width ="200" height = "400"> {% endcomment %}
+          </div>
+          <div class="carousel-item">
+            {% comment %} <img src="https://source.unsplash.com/user/wsanter" class="d-block w-100" alt=width ="200" height = "400"> {% endcomment %}
+            {% load static %} <img src="{% static "img/2.jpg" %}" style="width :1200; height :200" />
+
+          </div>
+          <div class="carousel-item">
+            {% comment %} <img src="https://source.unsplash.com/random/900×700/?fruit" class="d-block w-100" alt=width ="200" height = "400"> {% endcomment %}
+            {% load static %} <img src="{% static "img/3.jpg" %}" style="width :1200; height :200" />
+
+          </div>
+        </div> 
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<div>
+
+  <div class="container my-8">
+    <h1 class ="my-2"> select from our range </h1>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/random/900×700/?boy" class="d-block w-100" style="width :200; height :400">          
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/random/900×700/?fruit" class="d-block w-100" alt=width ="200" height = "400">
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/random/900×700/?girl" class="d-block w-100" alt=width ="200" height = "400">         
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock body %}
+
+
